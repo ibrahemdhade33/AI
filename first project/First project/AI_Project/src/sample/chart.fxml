@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="chartplot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="936.0" prefWidth="1681.0" style="-fx-background-color: #D3E4CD;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controlerchart">
+   <children>
+      <Label fx:id="label" layoutX="176.0" layoutY="35.0" prefHeight="105.0" prefWidth="533.0" text="Gentic Algorithm Graph" textFill="#94146d">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="ch" layoutX="22.0" layoutY="138.0" prefHeight="722.0" prefWidth="1445.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label fx:id="iteration" layoutX="639.0" layoutY="860.0" prefHeight="20.0" prefWidth="105.0" text="Iteration" textFill="#9a0b0b">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="first" layoutX="1511.0" layoutY="252.0" prefHeight="27.0" prefWidth="126.0" style="-fx-background-radius: 10px;" text="Label">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="second" layoutX="1511.0" layoutY="343.0" prefHeight="31.0" prefWidth="119.0" style="-fx-background-radius: 10px;" text="Label">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="third" layoutX="1511.0" layoutY="448.0" prefHeight="27.0" prefWidth="119.0" text="Label">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="other" layoutX="1511.0" layoutY="544.0" prefHeight="27.0" prefWidth="105.0" text="Label">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="686.0" layoutX="995.0" layoutY="88.0" startX="-306.0" />
+      <Line endX="-78.0" layoutX="231.0" layoutY="88.0" startX="-240.5" />
+   </children>
+</AnchorPane>
