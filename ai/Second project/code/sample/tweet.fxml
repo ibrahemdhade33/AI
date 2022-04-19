@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="668.0" prefWidth="952.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Tweet">
+   <children>
+      <AnchorPane layoutX="109.0" layoutY="127.0" prefHeight="469.0" prefWidth="735.0" style="-fx-border-color: #dad526; -fx-border-width: 5; -fx-border-radius: 10;">
+         <children>
+            <Label layoutX="45.0" layoutY="42.0" text="Tweet Text" textFill="#dad526">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tweettext" layoutX="195.0" layoutY="42.0" style="-fx-background-radius: 14;" />
+            <TextField fx:id="following" layoutX="195.0" layoutY="95.0" style="-fx-background-radius: 14;" />
+            <TextField fx:id="followers" layoutX="195.0" layoutY="151.0" style="-fx-background-radius: 14;" />
+            <TextField fx:id="actions" layoutX="195.0" layoutY="205.0" style="-fx-background-radius: 14;" />
+            <TextField fx:id="isretweet" layoutX="195.0" layoutY="254.0" style="-fx-background-radius: 14;" />
+            <TextField fx:id="location" layoutX="195.0" layoutY="310.0" style="-fx-background-radius: 14;" />
+            <Label layoutX="51.0" layoutY="95.0" text="Following" textFill="#dad526">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="151.0" text="Followers" textFill="#dad526">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="205.0" text="Actions" textFill="#dad526">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="254.0" prefHeight="30.0" prefWidth="122.0" text="Is_Retweet" textFill="#dad526">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="310.0" text="Location" textFill="#dad526">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Features" layoutX="448.0" layoutY="42.0" onAction="#FeaturesActions" prefHeight="30.0" prefWidth="173.0" promptText="Choose Features" style="-fx-background-radius: 14;" />
+            <Label layoutX="57.0" layoutY="387.0" text="Result" textFill="#dad526">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="result" layoutX="195.0" layoutY="387.0" style="-fx-background-radius: 14;" />
+            <Button layoutX="512.0" layoutY="387.0" mnemonicParsing="false" onAction="#resultaction" style="-fx-background-radius: 14;" text="Show Result" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="376.0" layoutY="39.0" text="Single Tweet Test" textFill="#dad526">
+         <font>
+            <Font name="Bodoni MT Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
